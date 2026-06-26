@@ -1,0 +1,3 @@
+#!/bin/bash
+g++ main.cpp code.cpp -o program
+./program
