@@ -1,8 +1,20 @@
 //main.cpp
 #include <iostream>
-#include "code.h"
+
+int getUserInput() {
+
+    std::cout << "یک عدد صحیح وارد کنید :‌ ";
+    int input{};
+    std::cin >> input;
+    return input;
+}
+
+
 int main() {
-    std::cout << "Sun result: " << add(2 , 5) << '\n';
+
+    int value{getUserInput() };
+    std::cout << "عددی که وارد کردید :‌" << value << " است \n";
+
     return 0;
 
 }
