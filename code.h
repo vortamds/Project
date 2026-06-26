@@ -1,8 +1,8 @@
 //code.h
-#ifndef CODE_H
-#define CODE_H
+// #ifndef CODE_H
+// #define CODE_H
 
+#pragma once
 
 int add(int x , int y);
-
-#endif
+// #endif

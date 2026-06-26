@@ -1,23 +1,8 @@
+//main.cpp
 #include <iostream>
-#define DEBUG
-// #define RELEASE
-
+#include "code.h"
 int main() {
-
-    #ifdef DEBUG
-        std::cout << "حالت دیباگ فعال هست !\n";
-    #endif
-    #ifndef RELEASE
-        std::cout << "این نسخه release نیست \n";
-    #endif
-
-    #if 0
-        std::cout << "این خط چاپ نمیشو\n";
-        //حتی این 
-        std::cout << "حتی این ";
-    #endif
-
-
+    std::cout << "Sun result: " << add(2 , 5) << '\n';
     return 0;
 
 }
