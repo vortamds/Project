@@ -1,6 +1,10 @@
 //code.cpp
-#include "code.h"
+#include <iostream>
 
-int add(int x , int y) {
-    return x + y;
+int main() {
+    std::cout << "5\n"; 
+    return 0;
+
+    std::cout << "Hello World!\n"; 
+    return 0;
 }
