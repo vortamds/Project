@@ -1,19 +1,15 @@
 // main.cpp
 #include <iostream>
-
-int getUserInput()
-{
-
-    std::cout << "یک عدد وارد کنید : ";
-    int input{};
-    std::cin >> input;
-    return input;
+int getUserInput() {
+    std::cout << "Enter an number: ";
+    int x{};
+    std::cin >> x;
+    return x;
 }
-int main()
+int main() 
 {
-
     int value{getUserInput()};
+    std::cout << "عددی که وارد کردید " << value << " است \n";
 
-    std::cout << "عددی که وارد کردید " << value << " است.\n";
     return 0;
 }
