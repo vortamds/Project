@@ -1,14 +1,20 @@
 // main.cpp
 #include <iostream>
 
-void a() {
-    std::cout << "a() called\n";
+int readNumber() {
+    std::cout << "Please enter a number: ";
+    int x{};
+    std::cin >> x;
+    return x;
 }
-void b() {
-    std::cout << "b() called\n";
-    a();
+
+void writeAnswer(int x) {
+    std::cout << "The quotient is: " << x << '\n';
 }
+
 int main() {
-    a();
-    b();
+    int x{ readNumber() };
+    int y{ readNumber() };
+    writeAnswer(x / y); // y همیشه صفر است!
+    return 0;
 }
