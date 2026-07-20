@@ -1,20 +1,12 @@
 // main.cpp
 #include <iostream>
+int main(){
 
-int readNumber() {
-    std::cout << "Please enter a number: ";
-    int x{};
-    std::cin >> x;
-    return x;
-}
+    std::cout << "size of char: " << sizeof(char) << '\n';
+    std::cout << "size of int: " << sizeof(int) << '\n';
+    std::cout << "size of float: " << sizeof(float) << '\n';
+    std::cout << "size of couble: " << sizeof(double) << '\n';
 
-void writeAnswer(int x) {
-    std::cout << "The quotient is: " << x << '\n';
-}
 
-int main() {
-    int x{ readNumber() };
-    int y{ readNumber() };
-    writeAnswer(x / y); // y همیشه صفر است!
     return 0;
 }
