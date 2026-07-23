@@ -1,13 +1,20 @@
 #include <iostream>
 
+bool isEqual(int a , int b) {
+    return a == b;
+}
+
 int main() {
 
-    bool isSunny {true};
-    bool isCloudy {!isSunny};
+    int x , y;
 
-    std::cout << "افتابی:‌" << isSunny << '\n';
-    std::cout << "ابری :‌" << isCloudy << '\n';
+    std::cout << "Enter a number one: ";
+    std::cin >> x;
+    std::cout << "Eneter a number two: ";
+    std::cin >> y;
 
+    std::cout << std::boolalpha;
+    std::cout << "ایا " << x << " و " << y << "برابرند؟ " << isEqual(x , y) << '\n';
 
     return 0;
 
